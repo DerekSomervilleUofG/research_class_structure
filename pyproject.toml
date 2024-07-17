@@ -1,0 +1,25 @@
+[project]
+name = "class_structure"
+version = "2024.0.0"
+dependencies = [
+  "utility @ git+https://git.dcs.gla.ac.uk/DerekSomerville/utility",
+]
+requires-python = ">=3.9"
+authors = [
+  {name = "Derek Somerville", email = "derek.somerville@glasgow.ac.uk"}
+]
+description = "Repository and class structures"
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+keywords = ["read", "write", "text"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+[project.urls]
+Repository = "https://git.dcs.gla.ac.uk/DerekSomerville/class_structure.git"
+
+[tool.setuptools]
+packages = ["class_structure"]
+py-modules = ["__init__"] 
