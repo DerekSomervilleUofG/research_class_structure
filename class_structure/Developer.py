@@ -15,8 +15,22 @@ class Developer(Structure):
     def is_active(self):
         return True
     
-    def get_login(self):
-        return self.login
+    def get_login(self, default=False):
+        login = self.login
+        if login is None and default and self.valid_name_for_login(self.name):
+            login = self.get_name()
+        return login
+    
+    def valid_name_for_login(self, name):
+        valid = True
+        counter = 0
+        if name[0] == "-" or name[len(name) - 1] == "":
+            valid = False
+        while valid and counter < len(name):
+            if not name[counter].isalnum():
+                valid = False
+            counter += 1
+        return valid
     
     def get_email(self):
         return self.email
