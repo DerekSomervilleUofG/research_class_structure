@@ -36,6 +36,17 @@ class File(StructureWithCode):
         if position > 0 and len(path.split("/")[0]) > 0 :
             package_name = path[0:position]
         return package_name
+    
+    def get_package_name_at_depth(path, depth):
+        package_name = File.get_package_name(path)
+        split_path = package_name.split("/")
+        if (len(split_path)) > depth:
+            package_name = ""
+            for counter in range(0, depth):
+                if package_name != "":
+                    package_name += "/"
+                package_name += split_path[counter] 
+        return package_name
 
     def set_package(self, package):
         self.package = package
