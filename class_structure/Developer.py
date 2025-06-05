@@ -12,6 +12,9 @@ class Developer(Structure):
     def set_developer_id(self, developer_id):
         self.set_primary_key(developer_id)
 
+    def get_developer_id(self):
+        return self.get_primary_key()
+
     def is_active(self):
         return True
     
