@@ -2,7 +2,6 @@ from class_structure.Structure import Structure
 from datetime import datetime
 class DeveloperExperience(Structure):
 
-    local_control_populate = LocalControlPopulate()
     input_format = "%Y-%m-%dT%H:%M:%SZ"
     output_format = "%Y%m%d%H%M%S"
 
