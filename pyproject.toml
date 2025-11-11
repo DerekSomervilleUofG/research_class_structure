@@ -2,7 +2,7 @@
 name = "class_structure"
 version = "2024.0.0"
 dependencies = [
-  "utility @ git+https://github.com/DerekSomervilleUofG/research_utility,
+  "utility @ git+https://github.com/DerekSomervilleUofG/research_utility",
 ]
 requires-python = ">=3.9"
 authors = [
