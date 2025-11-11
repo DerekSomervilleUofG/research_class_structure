@@ -2,7 +2,7 @@
 name = "class_structure"
 version = "2024.0.0"
 dependencies = [
-  "utility @ git+https://git.dcs.gla.ac.uk/DerekSomerville/utility",
+  "utility @ git+https://github.com/DerekSomervilleUofG/research_utility,
 ]
 requires-python = ">=3.9"
 authors = [
@@ -18,7 +18,7 @@ classifiers = [
 ]
 
 [project.urls]
-Repository = "https://git.dcs.gla.ac.uk/DerekSomerville/class_structure.git"
+Repository = "https://github.com/DerekSomervilleUofG/research_class_structure.git"
 
 [tool.setuptools]
 packages = ["class_structure"]
