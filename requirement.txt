@@ -1,1 +1,1 @@
-git+https://git.dcs.gla.ac.uk/DerekSomerville/utility
+git+https://github.com/DerekSomervilleUofG/research_utility
